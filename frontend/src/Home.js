@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from './components/Card';
 import Header from './components/Header';
 
 const Home = () => {
@@ -6,7 +7,10 @@ const Home = () => {
         <div className='home'>
             <Header />
             <div className='content'>
-                <button className='add'>Créez un article</button>
+                <div className='add_button'>
+                    <button className='add'>Créez un article</button>
+                </div>
+                <Card/>
             </div>
             
         </div>

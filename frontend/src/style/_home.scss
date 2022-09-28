@@ -4,17 +4,37 @@
     flex-direction: column;
     .content{
         display: flex;
-        background-color: red;
+        
+        // background-color: red;
         
         align-items: center;
         flex-direction: column;
-        width: 85vw;
+        width: 88vw;
         height: 100vh;
-        .add{
-            position: relative;
-            right: 0%;
-            left: 38vw;
+        .add_button{
+            display: inline;
+            width: 100%;
+            margin-bottom: 5%;
+            .add{
+                display: inline;
+                
+                float: right;
+                color: $green;
+                border: 5px solid $green;
+                background-color: none;
+                font-size: 24px;
+                font-weight: bold;
+                padding: 15px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 10px;
+                &:hover{
+                    background-color: $green;
+                    color: $bg-color;            
+                }
+            }
         }
+        
         
     }
 }
