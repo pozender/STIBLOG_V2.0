@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
+import Post_form from "./components/Post_form";
 import Home from "./Home";
  
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/add" element={<Post_form />} />
       </Routes>
     </BrowserRouter>
   );
